@@ -1,3 +1,5 @@
+import 'package:app_sell_valtx/views/home/widgets/content_recent_transaction.dart';
+import 'package:app_sell_valtx/views/home/widgets/content_send_again.dart';
 import 'package:flutter/material.dart';
 
 class Content extends StatelessWidget {
@@ -7,15 +9,14 @@ class Content extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
       child: Container(
-        width: double.infinity,
-        color: Colors.white,
-        child: ListView.builder(
-          itemCount: 500,
-          itemBuilder: (context, index) {
-            return Text("Index: $index");
-          },
-        ),
-      ),
+          width: double.infinity,
+          color: Colors.white,
+          child: Column(
+            children: const [
+              ContentSendAgain(),
+              ContentRecentTransaction(),
+            ],
+          )),
     );
   }
 }

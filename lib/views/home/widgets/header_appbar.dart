@@ -13,12 +13,14 @@ class HeaderAppbar extends StatelessWidget {
           text: const TextSpan(
             text: 'Welcome back, ',
             style: TextStyle(
-              fontSize: 16.0,
-            ),
+                fontSize: 16.0, color: Color.fromARGB(153, 255, 255, 255)),
             children: [
               TextSpan(
                 text: 'Airp!',
-                style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold),
+                style: TextStyle(
+                    fontSize: 16.0,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white),
               ),
             ],
           ),
